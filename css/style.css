@@ -1,0 +1,157 @@
+.site {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+
+.container {
+
+	position: relative;
+
+	margin: 0 auto;
+	margin-top: 100px;
+
+	height:580px;
+	width: 800px;
+background-image: url(../images/sky.png) ;
+
+
+	
+}
+
+
+
+.gza {
+
+	height: 460px;
+	width:  450px;
+	position: absolute;
+	
+	top: 120px;
+	left: 50%;
+
+	transform: translate(-50%);
+}
+
+.desert {
+	height: 580px;
+	width: 800px;
+	
+
+}
+
+.car {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	top: 400px;
+	transform: skewX(3deg);
+   
+    animation-name: move;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count:  infinite;
+     
+
+}
+
+
+.sun {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	
+	left: 150px;
+	top: 100px;
+	animation-name: sun;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count:  infinite;
+	transition: 1s;
+     
+}
+
+
+.cactus1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 250px;
+	left: 250px;
+	
+	animation-name: cactus;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count:  infinite;
+	transition: 0.5s;
+
+}
+
+
+
+.cactus2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 250px;
+	left: 450px;
+	
+	animation-name: cactus;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count:  infinite;
+	transition: 0.5s;
+
+}
+
+
+
+
+
+@keyframes move {
+	
+    from { top:400px  }
+    to {top :210px; width: 20px;height: 10px;  }
+    }
+
+
+ @keyframes sun {
+ 	0% { rotate: -180deg;  top:100px; left:150px ; }
+    25% { top: 90px; left: 175px; }
+    50% {top:75px ; left: 200px; }
+    75% {top: 70px; left: 225px;  }
+    100%{top: 65px; left: 250px;  }
+
+
+}
+
+
+
+
+@keyframes  cactus {
+
+     from { transform: rotateY(-180deg); }
+}
+
+
+
+ 
+
+	 
+
+
+
+
+
+
+
+
